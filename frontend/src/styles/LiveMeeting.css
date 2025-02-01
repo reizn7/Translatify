@@ -1,0 +1,112 @@
+.live-meeting {
+  background: #2d2d2d;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.meeting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+.meeting-header h2 {
+  color: #e1e1e1;
+  font-size: 1.5rem;
+}
+
+.end-meeting-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.end-meeting-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+.meeting-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.translation-panel, .tasks-panel {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #3d3d3d;
+}
+
+.translation-panel h3, .tasks-panel h3 {
+  color: #e1e1e1;
+  margin-bottom: 1rem;
+}
+
+.translation-content {
+  min-height: 200px;
+  background: #2d2d2d;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: #e1e1e1;
+}
+
+.tasks-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.tasks-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #3d3d3d;
+  color: #e1e1e1;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #3d3d3d;
+  border-radius: 8px;
+  background: #2d2d2d;
+  color: #e1e1e1;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #8b5cf6;
+}
+
+@media (max-width: 768px) {
+  .meeting-content {
+    grid-template-columns: 1fr;
+  }
+}
