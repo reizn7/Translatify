@@ -17,7 +17,7 @@ import google.generativeai as genai
 from mail import send_mail
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyAyQcDivAKpHJog5NEZqC1NsBjDVGotXss")
+genai.configure(api_key="GEMINI_API_KEY")
 
 # Audio recording parameters
 RATE = 16000
