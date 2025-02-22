@@ -3,8 +3,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # Email credentials
-SENDER_EMAIL = "contactme.piyush@gmail.com"  # Replace with your email
-APP_PASSWORD = "khao zpfb nyoc ljlo"  # Replace with your app password
+SENDER_EMAIL = ""  # Replace with your email
+APP_PASSWORD = ""  # Replace with your app password
 
 def send_mail(html_content):
     """
