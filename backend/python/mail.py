@@ -16,7 +16,7 @@ def send_mail(html_content):
         html_content (str): The HTML content to include in the email body.
     """
     try:
-        recipient_email = "contactme.piyush@gmail.com"  # Replace with recipient email
+        recipient_email = ""  # Replace with recipient email
         subject = "Minutes of Meeting (MoM)"
 
         # Configure the email message
